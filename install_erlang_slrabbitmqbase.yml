@@ -4,6 +4,16 @@
   become_method: sudo
   tasks:
     
+    - name: add erlang repo
+      apt-key:
+        url: https://packages.erlang-solutions.com/debian/erlang_solutions.asc
+        state: present
+        
+    - name: add erlang repo
+      apt-repository:
+        repo: https://packages.erlang-solutions.com/ubuntu xenial contrib
+        state: present
+    
     - name: apt update
       become: yes
       apt:
