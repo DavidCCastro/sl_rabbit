@@ -1,4 +1,4 @@
-- hosts: 192.1.1.74
+- hosts: slrabbitmqbase
   user: smartlis
   become: yes
   become_method: sudo
