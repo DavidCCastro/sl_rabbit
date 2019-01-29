@@ -11,7 +11,7 @@
         
     - name: add erlang repo
       apt_repository:
-        repo: https://packages.erlang-solutions.com/ubuntu xenial contrib
+        repo: deb https://packages.erlang-solutions.com/ubuntu xenial contrib
         state: present
     
     - name: apt update
